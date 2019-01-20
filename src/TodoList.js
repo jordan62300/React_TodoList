@@ -36,7 +36,7 @@ class TodoList extends Component {
     deleteTodo(item){
         let array = this.state.items;
         let index = array.indexOf(item)
-        array.splice(index,1);
+        array.splice(index,1);                          {/* selectionne l'index et le supprime du tableau */}
         this.setState({
             items: array
         })
