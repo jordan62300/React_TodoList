@@ -27,7 +27,7 @@ class TodoList extends Component {
         return this.state.items.map((item) => {
             return (
                 <div key={item}>
-                    {item} | <button onClick={this.deleteTodo.bind(this,item)}>X</button>
+                    {item} | <button onClick={this.deleteTodo.bind(this,item)}>X</button> {/*btn pour supprimer*/}
                 </div>
             )
         })
